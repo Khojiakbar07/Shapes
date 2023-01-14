@@ -40,7 +40,7 @@ namespace Shape
 
                 double p;
                 p = this.a + this.b + this.c;
-                Console.WriteLine("Perimeter (Triangle): " + p);
+                Console.WriteLine("Perimeter (Triangle): " + p);//6
                 return 0.0;
             }
             else
@@ -57,7 +57,7 @@ namespace Shape
                 double Area;
                 p = (this.a + this.b + this.c) / 2;
                 Area = Math.Sqrt(p * (p - this.a) * (p - this.b) * (p - this.c));
-                Console.WriteLine("Area (Triangle): " + Area);
+                Console.WriteLine("Area (Triangle): " + Area);//36
                 return 0.0;
             }
             else
