@@ -8,8 +8,8 @@ namespace Shape
 {
     internal interface Drawable
     {
-        public  void draw();
-        public abstract double area();
+        public void draw();
+        public double area();
         public abstract double perimeter();
     }
 }
