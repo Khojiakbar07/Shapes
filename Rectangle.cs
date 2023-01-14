@@ -1,41 +1,57 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Linq;
 
 namespace Shape
 {
-    internal class Rectangle
+    internal class Rectangle : Shape , Drawable
     {
-        private String color;
-        private String typeShape;
-        private double perimeter;
-        private double area;
-
-        public Rectangle(String Color, String TypeShape, double Perimeter, double Area)
+        private double a;
+        private double b;
+        private bool access;
+        public Rectangle(string Color, string typeShape) : base(Color, typeShape)
         {
-            this.color = Color;
-            this.typeShape = TypeShape;
-            this.perimeter = Perimeter;
-            this.area = Area;
+            
         }
-        public String Color
-        { get; set;}
-        public String TypeShape
-        { get; set; }
-        public Double Perimeter
-        { get; set; }
-        public Double Area
-        { get; set; }
 
-
-        public override string ToString()
+        public void Draw()
         {
-            return "Color: " + color + ",  TypeShape: " + typeShape + ",  Perimeter:" + perimeter + ",  Area: " + area + ".";
+            Console.WriteLine("--------------------------");
+        }
 
+        public double perimeter()
+        {
+            if (this.access)
+            {
 
+                double p;
+                p = (this.a + this.b) * 2;
+                Console.WriteLine("Area (Rectangle): " + p);
+                return 0.0;
+            }
+            else
+            {
+                Console.WriteLine("Wrong sides for rectangle to calculate perimeter");
+                return 0.0;
+            }
+        }
+        public double area()
+        {
+            if (this.access)
+            {
+
+                double Area;
+                Area = (this.a + this.b) * 2;
+                Console.WriteLine("Perimeter (Rectangle): " + Area);
+                return 0.0;
+            }
+            else
+            {
+                Console.WriteLine("Wrong sides for rectangle to calculate area");
+                return 0.0;
+            }
         }
     }
 }
