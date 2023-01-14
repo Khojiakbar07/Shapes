@@ -11,14 +11,17 @@ namespace Shape
         private double a;
         private double b;
         private bool access;
-        public Rectangle(string Color, string typeShape) : base(Color, typeShape)
+        public Rectangle(string Color, string typeShape, double a, double b) : base(Color, typeShape)
         {
-            
+            this.a = a;
+            this.b = b;
+
         }
+        
 
         public void Draw()
         {
-            Console.WriteLine("--------------------------");
+            Console.WriteLine("Shape is Rectangle :");
         }
 
         public double perimeter()
