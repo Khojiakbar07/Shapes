@@ -12,13 +12,25 @@ namespace Shape
         private double b;
         private double c;
         private bool access;
-        public Triangle(string Color, string typeShape) : base(Color, typeShape)
+        public Triangle(string Color, string typeShape,double a,double b,double c) : base(Color, typeShape)
         {
- 
+            this.a = a;
+            this.b = b;
+            this.c = c;
+            if ((this.a + this.b > this.c) && (this.a + this.c > this.b) && (this.b + this.c > this.a))
+            {
+                this.access = true;
+            }
+            else
+            {
+                this.access = false;
+            }
+
         }
+        
         public void Draw()
         {
-            Console.WriteLine("--------------------------");
+            Console.WriteLine("Shape is Triangle :");
         }
 
         public double perimeter()
@@ -41,9 +53,10 @@ namespace Shape
         {
             if (this.access)
             {
-
+                double p;
                 double Area;
-                Area = (this.a + this.b) * 2;
+                p = (this.a + this.b + this.c) / 2;
+                Area = Math.Sqrt(p * (p - this.a) * (p - this.b) * (p - this.c));
                 Console.WriteLine("Area (Triangle): " + Area);
                 return 0.0;
             }
