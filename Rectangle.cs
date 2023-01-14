@@ -31,7 +31,7 @@ namespace Shape
 
                 double p;
                 p = (this.a + this.b) * 2;
-                Console.WriteLine("Area (Rectangle): " + p);
+                Console.WriteLine("Area (Rectangle): " + p);//5
                 return 0.0;
             }
             else
@@ -46,8 +46,8 @@ namespace Shape
             {
 
                 double Area;
-                Area = (this.a + this.b) * 2;
-                Console.WriteLine("Perimeter (Rectangle): " + Area);
+                Area = (this.a * this.b);
+                Console.WriteLine("Perimeter (Rectangle): " + Area);//25
                 return 0.0;
             }
             else
