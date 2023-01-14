@@ -10,6 +10,6 @@ namespace Shape
     {
         public void draw();
         public double area();
-        public abstract double perimeter();
+        public double perimeter();
     }
 }
