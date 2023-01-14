@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +10,18 @@ namespace Shape
     {
         static void Main(string[] args)
         {
-            
+            Rectangle rec = new Rectangle("Red","Rectangle",5,5);
+            rec.Draw();
+            rec.perimeter();
+            rec.area();
+
+            Console.ReadLine();
+
+            Triangle tri = new Triangle("Blue","Triangle",3,4,5);
+            tri.Draw();
+            tri.perimeter();
+            tri.area();
         }
     }
 }
+
