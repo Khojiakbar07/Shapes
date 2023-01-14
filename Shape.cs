@@ -1,34 +1,23 @@
-﻿using Shape;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Shapes
+namespace Shape
 {
-    internal class Shape
+    abstract class Shape
     {
-        private String color;
-        private double area;
-        private double perimeter;
-        public Shape(String color) { this.color = color; }
-        protected void info()
+        protected String color;
+        protected String typeShape;
+        protected  Shape(String Color,String TypeShape)
         {
-            Console.WriteLine("Unknown shape");
-            Console.WriteLine("Area: " + this.area);
-            Console.WriteLine("Perimeter: " + this.perimeter);
-            Console.WriteLine("--------------------------");
+            this.color = Color;
+            this.typeShape = TypeShape;
         }
-        protected double calculateArea()
-        {
-            Console.WriteLine("Unknown shape,can not calculate area...");
-            return 0.0;
-        }
-        protected double calculatePerimeter()
-        {
-            Console.WriteLine("Unknown shape,can not calculate perimeter...");
-            return 0.0;
-        }
+        public String Color
+        { get; set; }
+        public String TypeShape
+        { get; set; }
     }
 }
