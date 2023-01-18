@@ -15,12 +15,15 @@ namespace Shape
             rec.perimeter();
             rec.area();
 
-            Console.ReadLine();
-
             Triangle tri = new Triangle("Blue","Triangle",3,4,5);
             tri.Draw();
             tri.perimeter();
             tri.area();
+            
+            Circle circle = new Circle("Red","Rectangle",5);
+            circle.Draw();
+            circle.perimeter();
+            circle.area();
         }
     }
 }
