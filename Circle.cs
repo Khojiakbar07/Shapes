@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,7 +16,7 @@ namespace Shape
 
         public void Draw()
         {
-            Console.WriteLine("--------------Shape is Circle--------------");
+            Console.WriteLine("-------------You choose Circle-------------");
         }
 
         public double perimeter()
