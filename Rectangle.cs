@@ -25,16 +25,18 @@ namespace Shape
         public double perimeter()
         {
                 double p;
-                p = (this.a + this.b) * 2;//5
-                Console.WriteLine("Area (Rectangle): " + p);
+                p = (this.a + this.b) * 2;//20
+                Console.WriteLine("Perimeter (Rectangle): " + p);
                 return 0.0;
         }
         public double area()
         {
                 double Area;
                 Area = (this.a * this.b); //25
-                Console.WriteLine("Perimeter (Rectangle): " + Area);
+                Console.WriteLine("Area (Rectangle): " + Area);
                 return 0.0;
         }
     }
 }
+
+
