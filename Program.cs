@@ -43,27 +43,37 @@ namespace Shape
                 Console.WriteLine($"{shapes}: is unknown shape");
             }
 
-            /*
+            Console.WriteLine("Choose one of the given shapes: ");
+            Console.WriteLine("1. Rectangle Perimeter or Rectangle Area");
+            Console.WriteLine("2. Triangle Perimeter or Triangle Area");
+            Console.WriteLine("3. Circle Perimeter or Circle Area");
+
             switch (shapes)
             {
-                case Circle circle:
-                    Console.WriteLine($"{circle.area()}");
-                    Console.WriteLine($"{circle.perimeter()}");
-                    break;
-                case Triangle tri:
-                    Console.WriteLine($"{tri.area()}");
-                    Console.WriteLine($"{tri.perimeter()}");
-                    break;
-                case Rectangle rec:
-                    Console.WriteLine($"{rec.area()}");
+                case "Rectangle Perimeter":
                     Console.WriteLine($"{rec.perimeter()}");
                     break;
+                case "Rectangle Area":
+                    Console.WriteLine($"{rec.area()}");
+                    break;
+                case "Triangle Perimeter":
+                    Console.WriteLine($"{tri.perimeter()}");
+                    break;
+                case "Triangle Area":
+                    Console.WriteLine($"{tri.area()}");
+                    break;
+                case "Circle Perimeter":
+                    Console.WriteLine($"{circle.perimeter()}");
+                    break;
+                case "Circle Area":
+                    Console.WriteLine($"{rec.area()}");
+                    break;
                 default:
-                    Console.WriteLine("<unknown shape>");
+                    Console.WriteLine("Can not calculate perimeter and area");
                     break;
 
             }
-
+            Console.ReadLine();
         }
        
     }
