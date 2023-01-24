@@ -63,8 +63,7 @@ namespace Shape
                     break;
 
             }
-           
-            Console.ReadLine();
+
         }
        
     }
