@@ -27,46 +27,28 @@ namespace Shape
             }
 
         }
-        
         public void Draw()
         {
-            Console.WriteLine("Shape is Triangle :");
+            Console.WriteLine("-------------You choose Triangle-------------");
         }
-
         public double perimeter()
         {
-            if (this.access)
-            {
-
                 double p;
                 p = this.a + this.b + this.c;
-                Console.WriteLine("Perimeter (Triangle): " + p);//6
+                Console.WriteLine("Perimeter (Triangle): " + p);//12
                 return 0.0;
-            }
-            else
-            {
-                Console.WriteLine("Wrong sides for triangle to calculate perimeter");
-                return 0.0;
-            }
         }
         public double area()
         {
-            if (this.access)
-            {
                 double p;
                 double Area;
                 p = (this.a + this.b + this.c) / 2;
                 Area = Math.Sqrt(p * (p - this.a) * (p - this.b) * (p - this.c));
-                Console.WriteLine("Area (Triangle): " + Area);//36
+                Console.WriteLine("Area (Triangle): " + Area);//6
                 return 0.0;
-            }
-            else
-            {
-                Console.WriteLine("Wrong sides for triangle to calculate area");
-                return 0.0;
-            }
         }
     }
 }
+
 
     
