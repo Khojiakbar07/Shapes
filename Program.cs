@@ -63,25 +63,7 @@ namespace Shape
                     break;
 
             }
-            
-            /*
-            Rectangle rec = new Rectangle("Red", "Rectangle", 5, 5);
-            rec.Draw();
-            rec.perimeter();
-            rec.area();
-
-
-
-            Triangle tri = new Triangle("Blue", "Triangle", 3, 4, 5);
-            tri.Draw();
-            tri.perimeter();
-            tri.area();
-
-            Circle circle = new Circle("Green", "Circle", 2);
-            circle.Draw();
-            circle.perimeter();
-            circle.area();
-            */
+           
             Console.ReadLine();
         }
        
