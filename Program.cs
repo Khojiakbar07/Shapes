@@ -20,26 +20,7 @@ namespace Shape
             Console.WriteLine("2. Triangle");
             Console.WriteLine("3. Circle");
             String shapes = Console.ReadLine();
-             /*
-            if (shapes == "Rectangle")
-            {
-                rec.Draw();
-            }
-            else if (shapes == "Triangle")
-            {
-                tri.Draw();
-
-            }
-            else if (shapes == "Circle")
-            {
-                circle.Draw();
-            }
-            else
-            {
-                Console.WriteLine($"{shapes}: is unknown shape");
-                return 0;
-            }
-           */
+            
             switch (shapes)
             {
                 case "Rectangle ":
@@ -51,7 +32,9 @@ namespace Shape
                 case "Circle ":
                     circle.Draw();
                     break;
-
+                default:
+                    Console.WriteLine($"{shapes}: is unknown shape");
+                    break;
             }
 
             Console.WriteLine("Enter Shape name and perimeter ");
