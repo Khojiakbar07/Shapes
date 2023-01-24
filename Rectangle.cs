@@ -10,51 +10,31 @@ namespace Shape
     {
         private double a;
         private double b;
-        private bool access;
         public Rectangle(string Color, string typeShape, double a, double b) : base(Color, typeShape)
         {
             this.a = a;
             this.b = b;
 
         }
-        
 
         public void Draw()
         {
-            Console.WriteLine("Shape is Rectangle :");
+            Console.WriteLine("-------------You choose Rectangle-------------");
         }
 
         public double perimeter()
         {
-            if (this.access)
-            {
-
                 double p;
-                p = (this.a + this.b) * 2;
-                Console.WriteLine("Area (Rectangle): " + p);//5
+                p = (this.a + this.b) * 2;//5
+                Console.WriteLine("Area (Rectangle): " + p);
                 return 0.0;
-            }
-            else
-            {
-                Console.WriteLine("Wrong sides for rectangle to calculate perimeter");
-                return 0.0;
-            }
         }
         public double area()
         {
-            if (this.access)
-            {
-
                 double Area;
-                Area = (this.a * this.b);
-                Console.WriteLine("Perimeter (Rectangle): " + Area);//25
+                Area = (this.a * this.b); //25
+                Console.WriteLine("Perimeter (Rectangle): " + Area);
                 return 0.0;
-            }
-            else
-            {
-                Console.WriteLine("Wrong sides for rectangle to calculate area");
-                return 0.0;
-            }
         }
     }
 }
